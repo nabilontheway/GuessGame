@@ -12,10 +12,11 @@ words = ['rainbow', 'computer', 'science', 'programming',
 word = random.choice(words)
 
 #Showing All the Words to the User.
+print("These are the Words:")
 print(words)
 
 #Prompting the User to Guess.
-print('Guess the Characters')
+print('Guess the Characters from a Word')
 
 #Initializing Guess and Turns
 guesses = ''
