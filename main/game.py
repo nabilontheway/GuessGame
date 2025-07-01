@@ -31,3 +31,25 @@ while turns > 0:
             print("_")
             failed += 1
 
+    #Chacking if The User has Won
+    if failed == 0:
+        print("Congratulations! You have won.")
+        print("The word is:", word)
+        break
+
+    #Prompting for Next Guess
+    guess = input("Guess a Character: ")
+    guesses += guess
+
+    #Handling Incorrect Guess
+    if guess not in word:
+        turns -= 1
+        print("Wrong!")
+        print("You have " + turns + "guesses left.")
+
+    #Checking if User has Lost
+    if turns == 0:
+        print("You have lost.")
+
+
+#Concluded!
