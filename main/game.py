@@ -11,6 +11,9 @@ words = ['rainbow', 'computer', 'science', 'programming',
          'reverse', 'water', 'board', 'geeks']
 word = random.choice(words)
 
+#Showing All the Words to the User.
+print(words)
+
 #Prompting the User to Guess.
 print('Guess the Characters')
 
@@ -36,7 +39,9 @@ while turns > 0:
         print("Congratulations! You have won.")
         print("The word is:", word)
         break
-
+    
+    print()
+    
     #Prompting for Next Guess
     guess = input("Guess a Character: ")
     guesses += guess
@@ -45,11 +50,11 @@ while turns > 0:
     if guess not in word:
         turns -= 1
         print("Wrong!")
-        print("You have " + turns + "guesses left.")
+        print(f"You have {turns}  guesses left.")
 
-    #Checking if User has Lost
-    if turns == 0:
-        print("You have lost.")
+        #Checking if User has Lost
+        if turns == 0:
+            print("You have lost.")
 
 
 #Concluded!
