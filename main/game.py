@@ -18,3 +18,16 @@ print('Guess the Characters')
 guesses = ''
 turns = 12
 
+#Main Game Loop
+while turns > 0:
+    
+    #Checking Each Character
+    failed = 0
+    for char in word:
+        
+        if char in guesses:
+            print(char, end='')
+        else:
+            print("_")
+            failed += 1
+
